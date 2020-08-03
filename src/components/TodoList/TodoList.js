@@ -5,8 +5,7 @@ import './TodoList.css'
 
 export default class TodoList extends Component {
   state = {
-    tasks: tasks,
-    done: false
+    tasks: tasks
   }
 
   render() {
@@ -18,8 +17,8 @@ export default class TodoList extends Component {
     const taskElements = this.state.tasks.map(task =>
       <li  key = {task.id} className="todo-list__task task">
         <input type="checkbox" name={task.id} id={task.id} />
-        <Task task = {task} />
-        <button>Delete task</button>
+        <Task task = {task}/>
+        <button onClick = {this.onDeleted}>Delete task</button>
       </li>
     )
 
@@ -33,4 +32,6 @@ export default class TodoList extends Component {
       </section>  
     )
   }
+
+  onDeleted = () => console.log('Deleted')
 }
