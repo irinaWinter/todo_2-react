@@ -1,5 +1,6 @@
 import React from 'react'
-import TodoListSection from './TodoListSection'
+import TodoList from './TodoList'
+import tasks from '../tasks'
 import '../index.css'
 
 function App () {
@@ -15,7 +16,7 @@ function App () {
 				<h1 className="header__heading">Website todo</h1>
 			</header>
 			
-			<TodoListSection />
+			<TodoList task = {tasks} />
 		</div>
 	)
 }
