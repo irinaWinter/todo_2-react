@@ -1,0 +1,11 @@
+.main-nav__burger {
+	position: absolute;
+	left: 15px;
+}
+
+.burger {
+	width: 15px;
+	height: 17px;
+	border: none;
+	cursor: pointer;
+}
